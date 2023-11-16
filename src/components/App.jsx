@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import data from "../testdata.js";
+import Categories from "./Categories.jsx";
 
 const App = () => {
   const [categories, setCategories] = useState(data.categories);
