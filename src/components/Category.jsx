@@ -8,11 +8,11 @@ const Category = ({title, clues}) => {
       <div className="categoryTitle">{title}</div>
       {clues.map((clue, index) => (
         // Render a Clue component for each clue, passing props to it.
-        <Clue 
-        key={index}
-        value={clue.value}
-        question={clue.question}
-        isAnswered={clue.isAnswered}
+        <Clue
+          key={clue.id}
+          value={clue.value}
+          isAnswered={clue.isAnswered}
+          onClick={() => handleClueClick(clue)}
         />
       ))}
     </div>

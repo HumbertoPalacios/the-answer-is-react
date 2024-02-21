@@ -1,6 +1,6 @@
-import Category from "./Category"; // import Category component so we can use it
-
-const Categories = (categories) => {
+import Category from "./Category.jsx"
+// Adjust the Categories component to correctly receive props
+const Categories = ({ categories }) => { // Corrected prop destructuring
   return (
     <div id="categories" data-testid="categoryList">
       {categories.map((category) => (
@@ -10,4 +10,4 @@ const Categories = (categories) => {
   );
 };
 
-export default Categories; //export component so it can be used by other components 
+export default Categories
